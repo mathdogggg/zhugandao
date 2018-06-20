@@ -6,7 +6,7 @@ import re
 url = (r'https://nba.hupu.com/')
 
 
-#获取热帖在首页的位置，返回url和标题
+#获取主干道热帖标题和链接，返回url和标题
 def get_retie_title_url(url):
 	index_html = requests.get(url)
 	index_html_s = BeautifulSoup(index_html.text,'lxml')
